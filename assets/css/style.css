@@ -25,6 +25,7 @@
 body {
   min-height: 100vh;
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
+  overflow-x: hidden;
 }
 
 html,
