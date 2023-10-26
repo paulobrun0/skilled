@@ -55,6 +55,7 @@ a {
   cursor: pointer;
   transition: 0.5s;
 }
+
 .primary {
   background: var(--MidnightBlue);
   padding: 10px 24px;
@@ -84,6 +85,7 @@ a {
 }
 
 .tertiary:hover {
+  transition: 0.5s;
   background: linear-gradient(
       0deg,
       rgba(255, 255, 255, 0.5) 0%,
@@ -121,12 +123,19 @@ a {
   padding-bottom: 26px;
 }
 
+.bg-desktop {
+  display: none;
+}
+
 .bg-image {
   margin-top: 46px;
-  /* background-image: url(/assets/images/image-hero-mobile.png);
-  object-fit: fill;
-  min-height: 100vh;
-  background-repeat: no-repeat; */
+  display: flex;
+  justify-content: center;
+  background-image: url(/assets/images/image-hero-mobile.png);
+  background-position: center;
+  /* object-fit: fill; */
+  min-height: 72vh;
+  background-repeat: no-repeat;
 }
 
 .check-course {
@@ -135,6 +144,7 @@ a {
     --Gradient-1,
     linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%)
   );
+  flex: 1;
 }
 
 .check-course p {
@@ -157,6 +167,7 @@ a {
   box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
   padding: 28px;
   position: relative;
+  flex: 1;
 }
 
 .img-course {
@@ -198,4 +209,61 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 36px 0;
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 40px;
+  }
+  .introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0px;
+    align-items: center;
+  }
+
+  .bg-desktop {
+    display: none;
+  }
+
+  .bg-image {
+    margin-top: 0;
+    background-image: url(/assets/images/image-hero-tablet.png);
+    background-position: inherit;
+    min-height: 104vh;
+  }
+
+  .list-course ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .introduction {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 0px;
+    margin-bottom: 134px;
+    align-items: center;
+  }
+
+  .introduction h1 {
+    max-width: 457px;
+  }
+
+  .introduction p {
+    max-width: 445px;
+    text-align: left;
+  }
+
+  .bg-image {
+    background-image: none;
+    margin-right: -280px;
+  }
+
+  .list-course ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
