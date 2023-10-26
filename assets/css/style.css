@@ -257,6 +257,10 @@ footer {
     text-align: left;
   }
 
+  .bg-desktop {
+    display: block;
+  }
+
   .bg-image {
     background-image: none;
     margin-right: -280px;
