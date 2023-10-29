@@ -124,7 +124,7 @@ a {
   padding-bottom: 26px;
 }
 
-.bg-desktop {
+/* .bg-desktop {
   display: none;
 }
 
@@ -134,10 +134,10 @@ a {
   justify-content: center;
   background-image: url(/assets/images/image-hero-mobile.png);
   background-position: center;
-  /* object-fit: fill; */
+  object-fit: fill;
   min-height: 72vh;
   background-repeat: no-repeat;
-}
+} */
 
 .check-course {
   border-radius: 10px;
@@ -223,16 +223,16 @@ footer {
     align-items: center;
   }
 
-  .bg-desktop {
+  /* .bg-desktop {
     display: none;
-  }
+  } */
 
-  .bg-image {
+  /* .bg-image {
     margin-top: 0;
     background-image: url(/assets/images/image-hero-tablet.png);
     background-position: inherit;
     min-height: 104vh;
-  }
+  } */
 
   .list-course ul {
     display: grid;
@@ -258,9 +258,9 @@ footer {
     text-align: left;
   }
 
-  .bg-desktop {
+  /* .bg-desktop {
     display: block;
-  }
+  } */
 
   .bg-image {
     background-image: none;
